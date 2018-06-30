@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lost in Space - Error 404</title>
+
+	<head>
+
+
+		<link rel="stylesheet" type="text/css" href="/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+		<script src="/js/jquery-1.6.2.js" type="text/javascript"></script>
+		<script src="/js/jquery.spritely-0.5.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			(function ($) {
+				$(document).ready(function () {
+					$('#astronaut')
+						.sprite({ fps: 30, no_of_frames: 1 })
+						.spRandom({ top: 30, bottom: 200, left: 30, right: 200 })
+					$('#space').pan({ fps: 40, speed: 3, dir: 'right', depth: 50 });
+				});
+			})(jQuery);	
+		</script>
+
+	</head>
+
+	<body>
+
+
+		<div id="container">
+			<div id="stage" class="stage">
+				<div id="space" class="stage" style="background-position: 1170px 0px;"></div>
+				<div id="astronaut" class="stage" style="top: 81.391423254529px; left: 106.099637326809px; background-position: 0px 0%;">
+					<div id="text_1">休斯敦,页面出错！</div>
+					<div id="text_2">错误 404!</div>
+					<div id="text_3">他宇宙你在寻找不存在</div>
+					<div id="text_4">尝试访问另一个维度</div>
+					<div id="text_5">
+						<ul>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>
